@@ -3,12 +3,7 @@ import time
 from PIL import Image, ImageDraw, ImageFont
 import RPi.GPIO as GPIO
 
-try:
-    from waveshare_epd import epd2in13b_V4
-except ImportError:
-    import sys
-    sys.path.append("/home/pi/e-Paper/RaspberryPi_Jetson/python/lib")
-    from waveshare_epd import epd2in13b_V4
+from waveshare_epd import epd2in13b_V4
 
 
 def main():
